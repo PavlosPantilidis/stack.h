@@ -28,7 +28,7 @@ void push(struct Stack *stack,void *data) {
     }
 
     newNode->data = data;
-    newNode->next = stack;
+    newNode->next = stack->top;
     stack->top = newNode;
 }
 
